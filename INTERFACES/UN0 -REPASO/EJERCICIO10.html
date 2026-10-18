@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Sonia Fernandez">
+        <meta name="description" content="practicas de html">
+        <title>ejercicio10</title>
+    </head>
+    <body>
+        <table border="1">
+            <caption>HORARIO</caption>
+            <thead>
+                <tr >
+                    <!--PARA QUE VISUALMENTE NO SE MEZCLEN LAS FILAS, HAY QUE DELIMITAR SI O SI UNA COLUMNA CON CADA FILA, EN ESTE CASO CON LAS HORAS DONDE SI O SI MARCA CADA FILA-->
+                    <th></th>
+                   <th>LUNES</th>
+                    <th>MARTES</th>
+                    <th>MIÉRCOLES</th>
+                    <th>JUEVES</th>
+                    <th>VIERNES</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="1">
+                    <td>15:15 - 16:10</td>
+                    <td>IPE II</td>
+                    <td rowspan="2">OPTATIVA</td>
+                    <td rowspan="2">SERVIDOR</td>
+                    <td rowspan="2">INTERFACES</td>
+                    <td rowspan="2">IPE II</td>
+                </tr>
+                <tr id="2">
+                    <td>16:10 - 17:15</td>
+                    <td rowspan="2">INTERFACES</td>
+                </tr>
+                <tr id="3">
+                    <td>17:15 - 18:00</td>
+                    <td>SERVIDOR</td>
+                    <td rowspan="2">INGLÉS</td>
+                    <td rowspan="2">TFG</td>
+                    <td rowspan="2">DESPLIEGUE</td>
+                </tr>  
+                <tr id="4">
+                    <td>18:15 - 19:10</td>
+                    <td>OPTATIVA</td>
+                    <td rowspan="2">CLIENTE</td>
+                </tr>
+                <tr id="5">
+                    <td>19:10 - 20:15</td>
+                    <td rowspan="2">SERVIDOR</td>
+                    <td rowspan="2">CLIENTE</td>
+                    <td rowspan="2">SERVIDOR</td>
+                    <td rowspan="2">CLIENTE</td>
+                </tr>
+                <tr id="6">
+                    <td>20:15 - 21:15</td>
+                    <td>INTERFACES</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </body>
+</html>

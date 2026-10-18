@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <meta name="description" content="repaso html">
+        <meta name="author" content="Sonia Fernández">
+        <title>ejercicio 15</title>
+    </head>
+    <main>
+        <body>
+            <figure>
+                <img src="images.jpg" alt="icono de un formulario" title="formulario" width="200px" height="200px">
+                <figcaption>Bienvenido al Formulario</figcaption>
+            </figure>
+            <form action="procesar.php" method="post">
+                <p>
+                    <label for="fechaNacimiento">fecha de nacimiento</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento"/>
+                </p>
+                <p>
+                    <label for="cantidad">Nivel de satisfacción</label>
+                    <input type="range" id="cantidad" name="cantidad" min="0" max="10"/>
+                </p>
+                <p>
+                    <label>Genero musical</label>
+                    <input type="radio" id="pop" name="gmus" value="pop"/>pop</input>
+                    <input type="radio" id="rock" name="gmus" value="rock"/>Rock</input>
+                    <input type="radio" id="jazz" name="gmus" value="jazz"/>Jazz</input>
+                    <input type="radio" id="house" name="gmus" value="house"/>House</input>
+                    <input type="radio" id="heavy" name="gmus" value="heavy"/>Heavy Metal</input>
+                </p>
+                <p>
+                    <label>Intereses</label>
+                        <input type="checkbox" id="intereses" name="intereses">Deporte</input>
+                        <input type="checkbox" id="intereses" name="intereses">Musica</input>
+                        <input type="checkbox" id="intereses" name="intereses">Arte</input>
+                        <input type="checkbox" id="intereses" name="intereses">Videojuegos</input>
+                        <input type="checkbox" id="intereses" name="intereses">Lectura</input>
+                        <input type="checkbox" id="intereses" name="intereses">Cine</input>
+                        <input type="checkbox" id="intereses" name="intereses">Tecnología</input>
+                </p>
+                <p>
+                    <label>Residencia: </label>
+                    <select name="residencia" id="residencia">
+                        <optgroup label="Europa">
+                            <option value="España">España</option>
+                            <option value="Francia">Francia</option>
+                            <option value="Alemania">Alemania</option>
+                            <option value="Italia">Italia</option>
+                        </optgroup>
+                        <optgroup label="América">
+                            <option value="Texas">Texas</option>
+                            <option value="Luisiana">Luisiana</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Argentina">Argentina</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <label>Observaciones</label>
+                    <textarea name="observaciones" id="observaciones" cols="30" rows="5" maxlength="200"></textarea>
+                </p>
+                <p>
+                    <button type="submit" id="enviar" name="enviar">Enviar</button>
+                    <button type="reset" id="limpiar" name="Limpiar">Limpiar</button>
+                </p>
+            </form>
+        </body>
+    </main>
+</html>
