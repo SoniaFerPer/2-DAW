@@ -1,0 +1,27 @@
+
+@page {
+    margin: 2cm;
+}
+
+body {
+    color: black;
+    background: white;
+    font-size: 12pt;
+}
+
+nav,
+.selector-tema,
+button,
+.no-imprimir {
+    display: none;
+}
+
+header {
+    background: white;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+main a::after {
+    content: " (" attr(href) ")";
+}

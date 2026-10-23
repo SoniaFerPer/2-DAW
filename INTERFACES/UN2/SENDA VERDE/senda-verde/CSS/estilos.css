@@ -1,0 +1,259 @@
+/* Sonia Fernández Pérez 22/10/2026*/
+
+/* ejercicio 4 */
+/* --- BODY --- */
+body {
+    color: #2B2B2B;
+    background-color: #F6F3EC;
+    line-height: 1.6;
+}
+
+/* --- FUENTES DE LOS TÍTULOS --- */
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
+/* --- TEXTO DESTACADO --- */
+
+strong, em {
+    color: #7A4E1D;
+}
+
+h1 {
+      color: #2E6B3F;
+}
+
+h2 {
+    color: #2E6B3F;
+    border-bottom: 2px solid #2E6B3F;
+}
+
+h3 {
+    color: #7A4E1D;
+}
+
+/* --- TEXTO --- */
+/* EJERCICIO 6 */
+.intro,.lema {
+    font-style: italic;
+}
+.intro {
+    font-size: 20px;
+}    
+.aviso{
+    background-color: #FFF4D6;
+    border-left:6px solid #E0A100;
+    padding: 12px;
+}
+.nota {
+    font-size: 14px;
+    color: #666666;
+}
+
+/* --- ENLACES Y LISTAS --- */
+a {
+    color: #2E6B3F;
+}
+
+ul {
+    list-style: square;
+}
+
+blockquote {
+    font-style: italic;
+    color: #555555;
+    border-left: 4px solid #E0A100;  /*No se pone coma para separar atributos */
+    padding-left: 16px;
+}
+
+/* --- CONTACTO --- */
+address {
+    font-style: normal;
+}
+
+
+/* --- EJERCICIO 7 --- */
+.etiqueta {
+    font-weight: bold;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.facil {
+    background-color: #2E7D4F;
+}
+.media {
+    background-color: #9A5B00;
+}
+.dificil {
+    background-color: #B83A2E;
+}
+
+/* --- DATOS DE LAS RUTAS --- */
+.datos p {
+    font-size: 14px;
+    color: #555555;
+}
+
+/* --- PRECIO EN CONTACTO --- */
+.precio {
+    font-weight: bold;
+    color: #2E6B3F;
+}
+
+/* --- FECHA EN INICIO --- */
+.fecha {
+    font-weight: bold;
+    color: #7A4E1D;
+     text-transform: uppercase;
+}
+
+/* --- CABECERA --- */
+#cabecera {
+    background-color: #2E6B3F;
+    color: white;
+    padding: 16px 24px;
+}
+
+/* --- PIE --- */
+#pie {
+    background-color: #E4DED0;
+    text-align: center;
+    font-size: 14px;
+    padding: 12px;
+    margin-top: 32px;
+}
+
+/* EJERCICIO 9 */
+
+/* --- TÍTULO DE LA CABECERA --- */
+#cabecera h1 {
+    color: white;
+}
+
+/* --- MENÚ --- */
+nav li {
+    display:  inline;
+    margin-right: 16px;
+
+}
+
+nav ul {
+    padding: 0;
+}
+
+/* --- ENLACES DEL MENÚ --- */
+nav a {
+    color: white;
+    text-decoration: none;  /*quita subrayado*/
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* --- ENLACES DEL PIE --- */
+#pie a {
+    color: inherit;
+}
+
+/* EJERCICIO 10 */
+.equipo > li {  /*con esto llamamos a un hijo directo del elemento clase.equipo */
+    font-weight: bold;
+}
+
+.equipo li ul li { /*la diferencia es que menos los hijos directos todos cambian a este estilo, porque el li directo cambia en el de arriba*/
+    font-weight: normal;
+    list-style: circle;  /*cambia sus viñetas a circulos */
+}
+
+/* EJERCICIO 11 */
+/*El orden de las pseudo-clases de enlaces es :link, :visited, :hover y :active (LoVe HAte).*/
+
+/* --- ENLACES VISITADOS --- */
+a:visited {
+    color: #5B4A8B;
+}
+
+/* --- FOCO CON LA TABLA TAB --- */
+a:focus { /* muestra un contorno cuando seleccionas un enlace con la tecla tab */
+    outline: 3px solid #E0A100;
+}
+
+/* --- ENLACES AL PASAR EL RATÓN --- */  
+a:hover {  /*hover en enlaces al pasar el raton */
+    color: #9A5B00;
+}
+/* enlaces de nav subrayado */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* --- BOTÓN DE INICIO --- */
+a.boton { /*selecciona los enlaces que estan en la clase boton */
+    background-color: #E0A100;
+    color: #2B2B2B;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+/* Al pasar el ratón por el botón */
+a.boton:hover {
+    background-color: #2E6B3F;
+    color: white;
+}
+
+/*EJERCICIO 12*/
+.activo{
+    color: #FFD166;
+    border-bottom: 3px solid #FFD166;
+}
+
+/*
+ESPECIFICIDAD (A, B, C)
+
+nav a       = (0, 0, 2)
+a:visited   = (0, 1, 1)
+a:hover     = (0, 1, 1)
+.activo     = (0, 1, 0)
+nav a.activo = (0, 1, 2)
+*/
+
+/* --- ESTADOS DE LOS ENLACES DEL MENÚ --- */
+
+/* Enlaces normales y visitados */
+nav a:link,
+nav a:visited {
+    color: white;
+}
+
+/* Al pasar el ratón */
+nav a:hover {
+    color: #FFD166;
+    text-decoration: underline;
+}
+
+/* Enlace activo: siempre amarillo */
+
+nav a.activo,
+nav a.activo:link,
+nav a.activo:visited,
+nav a.activo:hover {
+    color: #FFD166;
+    border-bottom: 3px solid #FFD166;
+}
+
+/* EJERCICIO 15 */
+.temas {
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+

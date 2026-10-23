@@ -1,0 +1,19 @@
+
+header {
+    background-color: black;
+    border-bottom: 4px solid #FFFF00;
+}
+
+.aviso {
+    background-color: black;
+    border: 1px solid #FFFF00;
+    color: white;
+}
+
+nav a {
+    color: white;
+}
+
+nav a.activo {
+    color: #FFFF00;
+}

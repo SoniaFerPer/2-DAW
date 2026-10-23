@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senda Verde · Contacto</title>
+  <link rel="stylesheet" href="CSS/estilos.css">
+  <link rel="alternate stylesheet" href="CSS/otonio.css" title="Otoño">
+  <link rel="alternate stylesheet" href="CSS/contraste.css" title="Alto contraste">
+  <link rel="stylesheet" href="CSS/print.css" media="print">
+</head>
+<body>
+
+  <header id="cabecera">
+    <h1>Senda Verde</h1>
+    <p class="lema">Club de senderismo de Linares</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="rutas.html">Rutas</a></li>
+        <li><a href="contacto.html" class="activo">Contacto</a></li>
+        <li><a href="blog/primera-salida.html">Blog</a></li>
+      </ul>
+    </nav>
+    <p class="temas">Tema: <button onclick="cambiarEstilo('Normal')">Normal</button> <button onclick="cambiarEstilo('Otoño')">Otoño</button> <button onclick="cambiarEstilo('Alto contraste')">Alto contraste</button> </p>
+  </header>
+
+  <main>
+    <h2>Dónde estamos</h2>
+    <p>Puedes pasarte por el local del club o escribirnos cuando quieras.</p>
+    <address>
+      Senda Verde<br>
+      Calle del Pinar 12, 23700 Linares (Jaén)<br>
+      Correo: <a href="mailto:info@sendaverde.example">info@sendaverde.example</a>
+    </address>
+
+    <h2>Horario de atención</h2>
+    <ul>
+      <li>Martes y jueves: 18:00 – 20:00</li>
+      <li>Sábados: 10:00 – 13:00</li>
+    </ul>
+    <p class="aviso"><strong>Importante:</strong> las inscripciones cierran el jueves anterior a cada salida.</p>
+
+    <h2>Cuotas</h2>
+    <p>Socio o socia: <span class="precio">30 € al año</span>. Sin ser socio: <span class="precio">5 € por salida</span>.</p>
+    <p class="nota">La cuota incluye el seguro de accidentes de la federación.</p>
+
+    <p class="no-imprimir"><a href="#cabecera">Volver arriba</a></p>
+  </main>
+
+  <footer id="pie">
+    <p>© 2026 Senda Verde · <a href="contacto.html">Contacto</a></p>
+    <p class="nota">Web de prácticas de 2º DAW. El club y sus datos son ficticios.</p>
+  </footer>
+<script src="JS/temas.js"></script>
+</body>
+</html>

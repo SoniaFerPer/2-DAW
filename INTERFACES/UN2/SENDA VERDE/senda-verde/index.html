@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senda Verde · Inicio</title>
+  <!-- Hoja persistente -->
+  <link rel="stylesheet" href="CSS/estilos.css">
+  <!-- Hoja alternativa de otoño -->
+  <link rel="alternate stylesheet" href="CSS/otonio.css" title="Otoño">
+  <!-- Hoja alternativa de alto contraste -->
+  <link rel="alternate stylesheet" href="CSS/contraste.css" title="Alto contraste">
+  <link rel="stylesheet" href="CSS/print.css" media="print">
+</head>
+<body>
+
+  <header id="cabecera">
+    <h1>Senda Verde</h1>
+    <p class="lema">Club de senderismo de Linares</p>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="activo">Inicio</a></li>
+        <li><a href="rutas.html">Rutas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog/primera-salida.html">Blog</a></li>
+      </ul>
+    </nav>
+    <p class="temas">Tema: <button onclick="cambiarEstilo('Normal')">Normal</button> <button onclick="cambiarEstilo('Otoño')">Otoño</button> <button onclick="cambiarEstilo('Alto contraste')">Alto contraste</button> </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Bienvenida</h2>
+      <p class="intro">Somos un grupo de amantes de la montaña que sale <strong>cada domingo</strong> a recorrer los senderos de la provincia de Jaén.</p>
+      <p>Organizamos rutas para todos los niveles, desde paseos familiares hasta travesías de un día completo. Solo necesitas ganas de caminar y un buen calzado.</p>
+      <p class="aviso"><strong>Aviso:</strong> la salida del 25 de octubre se retrasa una hora por el cambio de horario.</p>
+    </section>
+
+    <section>
+      <h2>Próximas salidas</h2>
+      <ul>
+        <li><span class="fecha">25 oct</span> Castillo de Santa Catalina (Jaén)</li>
+        <li><span class="fecha">8 nov</span> Río Borosa (Sierra de Cazorla)</li>
+        <li><span class="fecha">22 nov</span> Pico Mágina (Sierra Mágina)</li>
+      </ul>
+      <p><a href="rutas.html" class="boton">Ver todas las rutas</a></p>
+    </section>
+
+    <section>
+      <h2>¿Por qué caminar con nosotros?</h2>
+      <ol>
+        <li><em>Seguridad:</em> nuestros guías tienen formación en primeros auxilios.</li>
+        <li><em>Compañía:</em> cada salida es una ocasión para conocer gente nueva.</li>
+        <li><em>Naturaleza:</em> descubrirás rincones de Jaén que no salen en las guías.</li>
+      </ol>
+      <p class="nota">¿Nunca has hecho senderismo? Empieza por <a href="https://es.wikipedia.org/wiki/Senderismo">qué es el senderismo</a>.</p>
+    </section>
+  </main>
+
+  <footer id="pie">
+    <p>© 2026 Senda Verde · <a href="contacto.html">Contacto</a></p>
+    <p class="nota">Web de prácticas de 2º DAW. El club y sus datos son ficticios.</p>
+  </footer>
+<script src="JS/temas.js"></script>
+</body>
+</html>

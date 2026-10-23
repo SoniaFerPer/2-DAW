@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senda Verde · Blog</title>
+  <link rel="stylesheet" href="../CSS/estilos.css"> <!--hay que poner dos puntos para subcarpetas-->
+  <link rel="alternate stylesheet" href="../CSS/otonio.css" title="Otoño">
+  <link rel="alternate stylesheet" href="../CSS/contraste.css" title="Alto contraste">
+  <link rel="stylesheet" href="../CSS/print.css" media="print">
+</head>
+<body>
+
+  <header id="cabecera">
+    <h1>Senda Verde</h1>
+    <p class="lema">Club de senderismo de Linares</p>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../rutas.html">Rutas</a></li>
+        <li><a href="../contacto.html">Contacto</a></li>
+        <li><a href="primera-salida.html" class="activo">Blog</a></li>
+      </ul>
+    </nav>
+    <p class="temas">Tema: <button onclick="cambiarEstilo('Normal')">Normal</button> <button onclick="cambiarEstilo('Otoño')">Otoño</button> <button onclick="cambiarEstilo('Alto contraste')">Alto contraste</button> </p>
+  </header>
+
+  <main>
+    <article>
+      <h2>Crónica de nuestra primera salida de otoño</h2>
+      <p class="nota">Publicado el 12 de octubre de 2026</p>
+      <p>El domingo nos juntamos <strong>veintitrés personas</strong> en la puerta del club. A las ocho en punto salimos hacia Jaén para subir al <a href="../rutas.html">Castillo de Santa Catalina</a>.</p>
+      <p>La subida se hizo corta entre charlas y fotos. Arriba nos esperaba un día despejado y una vista de toda la campiña.</p>
+      <blockquote>
+        <p>«Ha sido mi primera ruta y no será la última. ¡Nos vemos en el Borosa!»</p>
+      </blockquote>
+      <p>Gracias a todos por venir. La próxima crónica, en noviembre.</p>
+    </article>
+  </main>
+
+  <footer id="pie">
+    <p>© 2026 Senda Verde · <a href="../contacto.html">Contacto</a></p>
+    <p class="nota">Web de prácticas de 2º DAW. El club y sus datos son ficticios.</p>
+  </footer>
+<script src="../JS/temas.js"></script>
+</body>
+</html>
